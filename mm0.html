@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .grid0 {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+      width: 90%;
+    }
+    .grid {
+      display: grid;
+      /*grid-template-columns: repeat(20, 1fr);*/
+      grid-template-columns: 3fr 3fr 3fr 3fr 3fr 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 10px;
+      width: 90%;
+    }
+    .grid-item {
+      background-color: #e0e0e0;
+      padding: 10px;
+      text-align: center;
+    }
+    .grid-item0 {
+      background-color: #a79685;
+      padding: 10px 20px 30px 40px;
+    /*  grid-column-start: 1;
+      grid-column-end: 21; */
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid0" id="myGrid0"></div>
+  <br>
+  <div class="grid" id="myGrid"></div>
+
+  <script>
+    // Define the grid size
+    const rows = 10;
+    const columns = 20;
+
+    // Get the grid container element
+    /*const gridContainer0 = document.getElementById('myGrid0');
+
+    const gridItem0 = document.createElement('div');
+        gridItem0.className = 'grid-item0';
+        gridItem0.textContent = "gird header";
+
+        var elem = document.createElement("img");
+        elem.src = "bola.png";
+        //elem.setAttribute("height", "768");
+        //elem.setAttribute("width", "1024");
+        // elem.setAttribute("alt", "Flower");
+        //document.getElementById("placehere").appendChild("elem");
+        document.getElementById("myGrid0").appendChild("elem");
+
+        gridContainer0.appendChild(gridItem0);
+
+*/
+    const gridContainer0 = document.getElementById('myGrid0');
+
+    const gridItem = document.createElement('div');
+    gridItem.className = 'grid-item';
+    gridItem.id = "um";
+    //gridItem.textContent = `Cell ${0}-${0}`;
+    gridItem.innerHTML = "<img src='bola.png'>";
+
+    // Append the grid item to the grid container
+    gridContainer0.appendChild(gridItem);
+
+    const gridContainer = document.getElementById('myGrid');
+
+    // Create the grid dynamically
+    for (let i = 0; i < rows; i++) {
+      for (let j = 0; j < columns; j++) {
+        // Create a grid item element
+        const gridItem = document.createElement('div');
+        gridItem.className = 'grid-item';
+        var idiota = "id"+j.toString()+i.toString();
+        console.log(idiota); 
+        gridItem.id = idiota;
+        gridItem.textContent = `Cell ${i + 1}-${j + 1}`;
+        // gridItem.innerHTML = "<img src='bola.png'>";
+
+        // Append the grid item to the grid container
+        gridContainer.appendChild(gridItem);
+      }
+    }
+  </script>
+</body>
+</html>

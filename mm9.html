@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .grid {
+            display: grid;
+            /*grid-template-columns: repeat(20, 1fr);*/
+            grid-template-columns: 1fr 5fr 2fr 1fr;
+            grid-template-rows: 50px 1100px;
+            grid-gap: 5px;
+            /*width: 40%; */
+            /* align-content: space-between;
+            justify-content: space-around; */
+            /* justify-content: space-evenly; */
+            /* grid-template-areas:
+                " a a a a"
+                " a a a a"; */
+            box-sizing: border-box;
+            width: 600px;
+            height: 1150px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .grid-item {
+            background-color: #e0e0e0;
+            padding: 2px;
+            text-align: center;
+        }
+        .itemk {
+            display: grid;
+            grid-column: 1 / 1;
+            grid-row: 2 / 1;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(16, 65px);
+            grid-gap: 2px;
+            /*margin: 0;
+            position: absolute;
+            top: 50%; */
+        }
+        .itemx {
+            display: grid;
+            grid-column: 2 / 1;
+            grid-row: 2 / 1;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(16, 65px);
+            grid-gap: 2px;
+        }
+        .subitem {
+            background-color: beige;
+            padding: 5px;
+            text-align: center;
+        }
+        .subitem2 {
+            background-color: beige;
+            padding: 5px;
+            text-align: center;
+            font-stretch: extra-expanded;
+            font-size: x-large;
+        }
+        .itemy {
+            display: grid;
+            grid-column: 3 / 1;
+            grid-row: 2 / 1;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(16, 65px);
+            grid-gap: 2px;
+        }
+        .itemz {
+            display: grid;
+            grid-column: 4 / 1;
+            grid-row: 2 / 1;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(12, 70px);
+            grid-gap: 2px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="grid" id="myGrid">
+        <div class="grid-item">A</div>
+        <div class="grid-item">
+            <h3>Master Mind</h3>
+        </div>
+        <div class="grid-item">
+            <h3>C</h3>
+        </div>
+        <div class="grid-item">
+            <h3>D</h3>
+        </div>
+        <div class="grid-item">
+            <div class="itemk">
+                <div class="subitem2">1</div>
+                <div class="subitem2">2</div>
+                <div class="subitem2">3</div>
+                <div class="subitem2">4</div>
+                <div class="subitem2">5</div>
+                <div class="subitem2">6</div>
+                <div class="subitem2">7</div>
+                <div class="subitem2">8</div>
+                <div class="subitem2">9</div>
+                <div class="subitem2">10</div>
+                <div class="subitem2">11</div>
+                <div class="subitem2">12</div>
+                <div class="subitem2">13</div>
+                <div class="subitem2">14</div>
+                <div class="subitem2">15</div>
+                <div class="subitem2">16</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="itemx">
+                <div class="subitem">
+                    <img src="img55/green.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/indigo.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/red.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/orange.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/yellow.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/blue.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/violet.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/brown.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/black.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/white.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/grey.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/pink.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/cyan.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/lettuce.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/caramel.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/furo25.png" />
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="itemy">
+                <div>|</div><div>|</div><div>|</div><div>|</div><div>|</div>
+                <div>|</div><div>|</div><div>|</div><div>|</div><div>|</div>
+                <div>|</div><div>|</div><div>|</div><div>|</div><div>|</div>
+                <div>|</div><div>|</div><div>|</div><div>|</div><div>|</div>
+                <div>|</div><div>|</div><div>|</div><div>|</div><div>|</div>
+                <div>|</div><div>|</div><div>|</div><div>|</div><div>|</div>
+                <div>|</div><div>|</div><div>|</div><div>|</div><div>|</div>
+                <div>|</div><div>|</div><div>|</div><div>|</div><div>|</div>
+                <div>|</div><div>|</div><div>|</div><div>|</div><div>|</div>
+                <div>|</div><div>|</div><div>|</div><div>|</div><div>|</div>
+                <div>|</div><div>|</div><div>|</div><div>|</div><div>|</div>
+                <div>|</div><div>|</div><div>|</div><div>|</div><div>|</div>
+                <div>|</div><div>|</div><div>|</div><div>|</div><div>|</div>
+                <div>|</div><div>|</div><div>|</div><div>|</div><div>|</div>
+                <div>|</div><div>|</div><div>|</div><div>|</div><div>|</div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="itemz">
+                <div class="subitem">
+                    <input type="image" src="img55/green.png" />
+                    <!-- img src="img55/green.png" / -->
+                </div>
+                <div class="subitem">
+                    <img src="img55/indigo.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/red.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/orange.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/yellow.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/blue.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/violet.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/brown.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/black.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/white.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/grey.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/pink.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/cyan.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/lettuce.png" />
+                </div>
+                <div class="subitem">
+                    <img src="img55/caramel.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

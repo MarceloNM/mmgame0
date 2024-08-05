@@ -1,0 +1,98 @@
+
+/*.grid0 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    width: 90%;
+}*/
+
+
+.grid {
+    display: grid;
+    /*grid-template-columns: repeat(20, 1fr);*/
+    grid-template-columns: 1fr 5fr 2fr 1fr;
+    grid-template-rows: 80px 1100px;
+    grid-gap: 2px;
+    /*width: 40%; */
+    /* align-content: space-between;
+    justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    /* grid-template-areas:
+        " a a a a"
+        " a a a a"; */
+    box-sizing: border-box;
+    width: 600px;
+    height: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grid-item {
+    background-color: #e0e0e0;
+    padding: 2px;
+    text-align: center;
+    font-size: x-large;
+    font-style: italic;
+}
+.numlinha {
+    display: grid;
+    grid-column: 1 / 1;
+    grid-row: 2 / 1;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(16, 65px);
+    grid-gap: 2px;
+    /*margin: 0;
+    position: absolute;
+    top: 50%; */
+}
+.jogadas {
+    display: grid;
+    grid-column: 2 / 1;
+    grid-row: 2 / 1;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(16, 65px);
+    grid-gap: 2px;
+}
+.subitem {
+    background-color: beige;
+    padding: 5px;
+    text-align: center;
+}
+.numlinhas {
+    background-color: beige;
+    padding: 5px;
+    text-align: center;
+    font-stretch: extra-expanded;
+    font-size: x-large;
+}
+.pontos {
+    display: grid;
+    grid-column: 3 / 1;
+    grid-row: 2 / 1;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(16, 65px);
+    grid-gap: 2px;
+}
+.pontuacao {
+    background-color: beige;
+    padding: 8px 1px 1px 1px;
+
+    text-align: center;
+}
+.palete {
+    display: grid;
+    grid-column: 4 / 1;
+    grid-row: 2 / 1;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(16, 65px);
+    grid-gap: 2px;
+    margin-left: 10px;
+}
+
+.button { 
+    /*padding: 10px 20px;*/ 
+    /*background-color: #0e4b10; */
+    /*color: white;*/ 
+    border: none; 
+    cursor: pointer; 
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6); 
+} 

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(20, 1fr);
+      grid-gap: 10px;
+      width: 500px;
+    }
+    .grid-item {
+      background-color: #e0e0e0;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid" id="myGrid"></div>
+
+  <script>
+    // Define the grid size
+    const rows = 7;
+    const columns = 20;
+
+    // Get the grid container element
+    const gridContainer = document.getElementById('myGrid');
+
+    // Create the grid dynamically
+    for (let i = 0; i < rows; i++) {
+      for (let j = 0; j < columns; j++) {
+        // Create a grid item element
+        const gridItem = document.createElement('div');
+        gridItem.className = 'grid-item';
+        gridItem.textContent = `Cell ${i + 1}-${j + 1}`;
+
+        // Append the grid item to the grid container
+        gridContainer.appendChild(gridItem);
+      }
+    }
+  </script>
+</body>
+</html>
